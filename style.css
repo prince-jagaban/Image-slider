@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+}
+
+.img-container {
+    width: 60%;
+    height: 80vh;
+    background: url("img/1.jpg") center/cover fixed no-repeat;
+    border: 0.5rem solid #FFF700;
+    border-radius: 0.5rem;
+    position: relative;
+    margin: 4rem auto;
+    box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.6);
+    cursor: pointer; /* Added cursor style */
+}
+
+.btn-left,
+.btn-right {
+    position: absolute;
+    top: 50%;
+    background-color: #3B117E;
+    color: #fff;
+    transform: translateY(-50%);
+    border: 0.2rem solid #3CBFF8;
+    font-size: 1.5rem;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.btn-left {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.btn-right {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .img-container {
+        width: 80%;
+        height: 60vh;
+    }
+}
